@@ -1,26 +1,32 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import find_packages, setup
-from compyler import __version__
 
-NAME = "compyler"
+from compyler import __version__, __app_name__
+
+NAME = __app_name__
 
 LONG_DESCRIPTION = """
-Projeto compiladores - CCON7A-CCO076 [2020]
+A linguagem de programação SIMPLE, como o próprio nome indica, é uma linguagem simples,
+mas ainda sim poderosa e de alto nível, semelhante às versões iniciais da conhecida linguagem BASIC.
+
+Por meio de um CLI estaremos desenvolvendo um compilador feito em Python para essa linguagem.
 """.strip()
 
 SHORT_DESCRIPTION = """
-Projeto compiladores - CCON7A-CCO076 [2020].""".strip()
+Projeto compiladores - Criação de um compilador para a linguagem SIMPLE - CCON7A-CCO076 [2020].""".strip()
 
 DEPENDENCIES = [
+    "arrow==1.0.3",
     "asciimatics==1.12.0",
     "docopt==0.6.2",
+    "rich==10.0.0",
 ]
 
 URL = "https://github.com/lpmatos/compyler"
-EMAIL = "luccapsm@gmail.com"
+EMAIL = "luccapsm@protonmail.com"
 AUTHOR = "Lucca Pessoa da Silva Matos"
-REQUIRES_PYTHON = ">=3.8.0"
+REQUIRES_PYTHON = ">=3.6.0"
 VERSION = __version__
 
 setup(
@@ -30,9 +36,9 @@ setup(
     version=VERSION,
     license="MIT license",
     url=URL,
-    packages=find_packages(include=[NAME], exclude=[
-                           "tests", "*.tests", "*.tests.*", "tests.*"]),
+    packages=find_packages(include=[NAME], exclude=["tests"]),
     package_data={NAME: ["py.typed"]},
+    include_package_data=True,
     zip_safe=False,
     description=SHORT_DESCRIPTION,
     long_description=LONG_DESCRIPTION,

@@ -7,4 +7,3 @@ A linguagem de programação SIMPLE, como o próprio nome indica, é uma linguag
 - Cada comando inicia com uma das seguintes palavras reservadas: `rem`, `input`, `let`, `print`, `goto`, `if/goto` ou `end`.
 
 ## Comandos da linguagem de programação SIMPLE
-
