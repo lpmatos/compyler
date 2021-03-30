@@ -45,14 +45,17 @@ setup(
     long_description=LONG_DESCRIPTION,
     install_requires=DEPENDENCIES,
     python_requires=REQUIRES_PYTHON,
+
     entry_points=f"""
         [console_scripts]
         {NAME}={NAME}.main:main
     """,
-    keywords=[
+
+    keywords=(
         "cli",
         "python"
-    ],
+    ),
+
     classifiers=[
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
@@ -67,6 +70,7 @@ setup(
         "Topic :: Software Development",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
+
     project_urls={
         "Repository": f"{URL}",
     },
