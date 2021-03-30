@@ -10,11 +10,12 @@ LONG_DESCRIPTION = """
 A linguagem de programação SIMPLE, como o próprio nome indica, é uma linguagem simples,
 mas ainda sim poderosa e de alto nível, semelhante às versões iniciais da conhecida linguagem BASIC.
 
-Por meio de um CLI estaremos desenvolvendo um compilador feito em Python para essa linguagem.
+Por meio de um CLI estaremos desenvolvendo um compilador feito em Python para essa linguagem que terá
+as fazes de análise léxica, sintática and semântica.
 """.strip()
 
 SHORT_DESCRIPTION = """
-Projeto compiladores - Criação de um compilador para a linguagem SIMPLE - CCON7A-CCO076 [2020].""".strip()
+IESB - [CCON7A-CCO076] - Projeto compiladores - Criação de um compilador para a linguagem SIMPLE.""".strip()
 
 DEPENDENCIES = [
     "arrow==1.0.3",
@@ -36,7 +37,7 @@ setup(
     version=VERSION,
     license="MIT license",
     url=URL,
-    packages=find_packages(include=[NAME], exclude=["tests"]),
+    packages=find_packages(include=[NAME]),
     package_data={NAME: ["py.typed"]},
     include_package_data=True,
     zip_safe=False,
@@ -67,6 +68,6 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     project_urls={
-        "Repository": "https://github.com/lpmatos/compyler",
+        "Repository": f"{URL}",
     },
 )

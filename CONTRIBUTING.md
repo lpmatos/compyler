@@ -22,6 +22,7 @@ Nosso objetivo aqui é gerar valor para projetos com múltiplas participações.
   - [Overview](#overview)
   - [Commit Message Format](#commit-message-format)
 - [➤ Release Steps](#-release-steps)
+  - [Code](#code)
 
 ## ➤ Tools, Packages and Conventions
 
@@ -184,6 +185,8 @@ cz-cli@4.0.3, cz-conventional-changelog@3.2.0
 4. Rode o comand `git commit -am "chore: bump version file"`
 5. Rode o comand `make release`
 6. Run `git pull --all && git pull --tags`
+
+### Code
 
 ```bash
 export GITLAB_TOKEN=""
